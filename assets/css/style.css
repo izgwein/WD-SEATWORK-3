@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", sans-serif;
+  color: white;
+}
+
+body{
+  background-image: url("../img/garnet-visor.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container{
+
+}
+
+#texts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
+  padding-left: 25%;
+  padding-top: 20%;
+}
+
+h1{
+  padding-bottom: 1rem;
+}
+
+h5{
+  text-align: center;
+}
+
+#content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.card1{
+  background-color: rgb(76, 76, 136);
+  width: 340px;
+  height: 346px;
+  padding: 10px;
+  position: relative;
+  transition: 0;
+
+  .back{
+    position: absolute;
+    background-color: rgb(76, 76, 136);
+    width: 0px;
+    height: 346px;
+    padding: 10px;
+    top: -1px;
+    left: -10px;
+    opacity: 0;
+    transition: 0.2s ease-out;
+  
+    h2{
+      position: absolute;
+      text-align: center;
+      font-size: 3rem;
+      left: 70px;
+      top: 150px;
+    }
+  }
+}
+
+.sapphire1{
+  position: absolute;
+  left: 12%;
+  transition: 0.2s ease-out;
+}
+
+
+
+.sapphire2{
+  position: absolute;
+  opacity: 0;
+  width: 320px;
+  top: -30px;
+  left: 100px;
+  transition: 0.2s ease-out;
+}
+
+.card1:hover .card1{
+  opacity: 0;
+  width: 0px;
+}
+
+
+.card1:hover .back{
+  opacity: 1;
+  width: 480px;
+  background-color: rgb(46, 46, 92);
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+.card1:hover .sapphire1{
+  opacity: 0;
+  left: 1%;
+}
+
+.back:hover .sapphire2{
+  opacity: 1;
+  left: 300px;
+}
+
+
+.card2{
+  background-color: rgb(204, 41, 41);
+  width: 340px;
+  height: 346px;
+  padding: 13px;
+  position: relative;
+  transition: 0.1s ease;
+
+  .back2{
+    position: absolute;
+    background-color: rgb(204, 41, 41);
+    padding: 10px;
+    top: 6px;
+    opacity: 0;
+    left: -120px;
+    transition: 0.2s ease-out;
+
+    h2{
+      position: absolute;
+      text-align: center;
+      font-size: 3rem;
+      left: 288px;
+      top: 150px;
+    }
+}
+}
+
+.ruby1{
+  position: absolute;
+  top: 32px;
+  transition: 0.2s ease-out;
+  height: 340px;
+}
+
+.ruby2{
+  position: absolute;
+  width: 350px;
+  top: -30px;
+  left: -70px;
+  transition: 0.2s ease-out;
+}
+
+.card2:hover .card2{
+  opacity: 0;
+  width: 100px;
+}
+
+
+.card2:hover .back2{
+  background-color: rgb(170,0,0);
+  background: linear-gradient(90deg, rgb(105, 1, 1) 0%, rgb(160, 2, 39) 35%, rgb(196, 49, 52) 100%);
+  opacity: 1;
+  width: 480px;
+  height: 350px;
+  left: -135px;
+  top:1px;
+  transition: 0.2s ease-out;
+
+}
+
+.card2:hover .ruby1{
+  opacity: 0;
+  right: 5%;
+  transition: 0.1s ease;
+}
+
+.back2:hover .ruby2{
+  opacity: 1;
+  left: -87px;
+  top: -25px;
+
+}
