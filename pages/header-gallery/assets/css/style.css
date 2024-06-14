@@ -16,7 +16,6 @@
     height: fit-content;
     width: 100vw;
     overflow-x: hidden;
-    background: #ff0000;
   }
   
   section {
@@ -26,8 +25,7 @@
     gap: 1rem;
     align-items: flex-end;
   }
-  
-  
+
   header.design1 {
     width: 10px;
     height: 9vh;
@@ -254,98 +252,175 @@
     align-self: flex-start;
     transform: translate(-200px, -900px);
     transition: transform 0.2s ease-in-out;
-    z-index: 1; 
-    
-    
+    z-index: 1;
   }
-  
+
   header.design4 .navigation {
     display: flex;
     flex-direction: column;
   }
-  
+
   header.design4 .navigation a.nav-content {
     font-weight: 600;
     font-size: 1.3rem;
     color: white;
     padding: 3.5rem;
   }
-  
-  
+
   #toggle2:checked ~ header.design4 {
     width: 10vw;
     background: rgb(58, 190, 249);
     transform: translate(80px, -900px);
   }
-  
+
   #toggle2:checked ~ header.design4 .navigation {
     display: flex;
     align-items: center;
     gap: 5.9rem;
   }
-  
+
   #toggle2:checked ~ header.design4 .navigation a.nav-content {
     font-weight: 600;
     font-size: 1.3rem;
     color: rgb(1, 32, 78);
     transition: 0.2s ease;
-  
+
   }
-  
+
   #toggle2:checked ~ header.design4 .navigation a.nav-content:hover{
     transform: translate(0px, -20px);
           background:rgb(58, 190, 249);
           box-shadow: 2px 2px 10px 5px rgb(53, 114, 239);
-          border: 2px solidrgb(1, 32, 78);
+          border: 2px solid rgb(1, 32, 78);
           padding: 6rem 16px 6rem 6.1rem;
   }
-  
+
+
+
   header.design5{
     width: 100vw;
     display: flex;
-    justify-content: space-between;
-    padding: 0.7rem 10vw;
-    background: #CB356B;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+    background: rgb(1, 32, 78);
     position: relative;
-  
-  
-    & > img.logo{
+    & > img.logo1, & > img.logo2{
       height: 80px;
+      position: absolute;
+      left: 4.6rem;
+      top: 30px;
+      transition: opacity 0.3s ease;
+    }
+
+    & > img.logo1 {
+      z-index: 1;
     }
   
+    & > img.logo2 {
+      opacity: 0;
+      z-index: 0;
+      left: 4rem;
+    }
+  
+    &:hover > img.logo1 {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+  
+    &:hover > img.logo2 {
+      opacity: 1;
+    }
+
     & > nav.navigation {
       display: flex;
       align-items: center;
       gap: 0;
-  
-  
+
       & > a.nav-content {
         font-weight: 600;
         font-size: 1.3rem;
         color: white;
-        padding: 2rem;
+        padding: 1rem 3rem 0 2rem;
         transition: 0.2s ease;
         position: relative;
-  
-        & > i.icon{
-          position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-          opacity: 0;
-          transition: opacity 0.2s ease;
-        }
-  
+        text-align: center;
+
         &:hover{
-          color: transparent;
-  
-          i.icon{
-            opacity: 1;
-            }
+          transform: translateY(-10px);
+          text-decoration: underline rgb(93, 93, 245);
         }
-  
-        
         }
       }
+
+      & > nav.navigation2{
+        padding: 1rem 4rem;
+        width: 500px;
+        & > div{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-right: -190px;
+          padding: 0 3rem;
+
+          & > img.logo{
+            height: 80px;
+          }
+
+          & > a.nav-content {
+            font-weight: 600;
+            font-size: 2rem;
+            color: white;
+
+            &:hover{
+              text-shadow: 2px 2px 10px rgb(93, 93, 245);
+            }
+          }
+          & > a.nav-content2{
+            font-weight: 600;
+            font-size: 4rem;
+            color: white;
+
+            &:hover{
+              text-shadow: 2px 2px 20px rgb(93, 93, 245);
+            }
+          }
+          & > button.btn{
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border: 2px solid #000;
+            box-sizing: border-box;
+            color: #000;
+            cursor: pointer;
+            fill: #000;
+            font-size: 1.3rem;
+            font-weight: 600;
+            height: 50px;
+            justify-content: center;
+            width: 250px;
+            padding: 1.3rem 1.3rem;
+            text-align: center;
+            text-decoration: none;
+            transition: all .3s;
+    
+    
+            &:focus {
+              color: #171e29;
+            }
+    
+            &:hover {
+              border-color: #06f;
+              border-radius: 30px;
+              color: #06f;
+              fill: #06f;
+            }
+            &:active {
+              border-color: #06f;
+              color: #06f;
+              fill: #06f;
+            }
+          }
+        }
+
+      }
     }
-  
-  

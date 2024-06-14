@@ -13,10 +13,6 @@ body{
   background-size: cover;
 }
 
-.container{
-
-}
-
 #texts{
   display: flex;
   justify-content: center;
