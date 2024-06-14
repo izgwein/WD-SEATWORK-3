@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/izgwein/">
-    <img src="./assets/img/garnet.png" alt="garnet">
+    <img src="./assets/img/ruby.png" alt="garnet">
   </a>
   <h3 align="center">Seatwork 3: Footer & Header</h3>
 </div>
