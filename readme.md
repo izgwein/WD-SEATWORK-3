@@ -10,7 +10,7 @@
   <h3 align="center">Seatwork 3: Footer & Header</h3>
 </div>
 <div align="center">
-  This is for demonstrating skills in HTML and CSS with Multiple Pages, Effects and Container Manipulations. Providing a Different Versions of Headers and Footers.
+  This is a seatwork in using only HTML and CSS that focuses not only in designing multiple HTML pages <br>but also the use of different effects in CSS to make different headers and footers of a website.
 </div>
 
 <br />
@@ -52,11 +52,14 @@
 Project demonstrate the coding of HTMl and CSS in different kinds of headers and footers in addition of animations. This is to have hands-on experience in coding and having an actual output.
 
 ### Key Components
-- Header Animation
+- Header And Footer Animation
   - Hover Effect
   - Active Effect
   - Multi Layer Domino Effect
   - Not Effect
+  - Text Shadows
+  - Transition and Transform Manipulation
+  - Gradients
 
 
 ### Technology
@@ -101,4 +104,7 @@ WD-ProjectName
 
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Hover Effects | Used some codes for hover transitions. | https://ianlunn.github.io/Hover/ |
+| Checkbox Hack | Used for trigger button on Header 1 and Header 4. | https://css-tricks.com/the-checkbox-hack/ |
+| Search box Transition | Search box transition used for Header 3. |https://codepen.io/ShortCode/pen/jOrBeOw |
+| Sidebar Toggle | Used concept and some codes to make Header 4. |https://codepen.io/plavookac/pen/qomrMw |
